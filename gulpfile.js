@@ -18,5 +18,5 @@ gulp.task('scss', () => {
 
 gulp.task('default', [ 'scss', 'js' ], () => {
    gulp.watch('frontend/scss/**/*.scss', ['scss']);
-   gulp.watch('frontend/js/**/*.js', ['js']);
+//   gulp.watch('frontend/js/**/*.js', ['js']);
 });
