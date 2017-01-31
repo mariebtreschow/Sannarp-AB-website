@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 
-db.sequelize.sync({}).then(() => {
+db.sequelize.sync().then(() => {
    app.listen(3000, (req, res) => {
       displayRoutes(app);
       console.log('App listening on 3000!');
