@@ -1,10 +1,18 @@
 body, html {
    margin: 0px;
    padding: 0px;
+   font-family: 'Libre Baskerville', serif !important;
+
 }
 
-h1 {
-   color: red !important;
+div.col-xs-6.col-md-6 h1 {
+   color: green;
+   font-size: 400%;
+}
+
+
+.navbar.navbar-default {
+   margin-bottom: 0px;
 }
 
 .container-fluid {
@@ -12,9 +20,53 @@ h1 {
    margin-bottom: 10px;
    color: black;
    letter-spacing: 2px;
-   font-size: 16px;
+   font-size: 12px;
+
 }
 
 a.navbar-brand {
    font-size: 20px;
+}
+
+div.col-xs-6.col-md-6 {
+   text-align: center;
+   margin-top: 160px;
+}
+
+.container-fluid-2 {
+   background-image: url('bakgrundbild.png');
+   background-size: 100% 100%;
+   position: relative;
+   overflow: hidden;
+   height: 600px;
+   min-height: 100%;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container-fluid-3 {
+   height: 350px;
+   margin-top: 50px;
+}
+
+.col-xs-6.col-md-4 {
+   text-align: center;
+}
+
+.container-fluid-4 {
+   background-color: #F0F0F0;
+
+}
+
+.container-fluid-4 p {
+   margin-left: 50px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+div.col-md-6 h5 {
+   margin-top: 25px;
+
 }
