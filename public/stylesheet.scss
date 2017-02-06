@@ -2,6 +2,13 @@ body, html {
    margin: 0px;
    padding: 0px;
    font-family: 'Libre Baskerville', serif !important;
+}
+
+section.container#section {
+   margin-left: 0px;
+   margin-right: 0px !important;
+   padding-right: 0px;
+   padding-left: 0px;
 
 }
 
@@ -51,22 +58,26 @@ div.col-xs-6.col-md-6 {
    margin-top: 50px;
 }
 
-.col-xs-6.col-md-4 {
+.col-xs-4.col-md-4 {
    text-align: center;
 }
 
-.container-fluid-4 {
-   background-color: #F0F0F0;
+//footer container
 
+footer.container-fluid.bg-4 {
+   background-color: lightgrey;
+   height: 100%;
+   margin-bottom: 0px;
 }
 
-.container-fluid-4 p {
-   margin-left: 50px;
-   margin-top: 25px;
-   margin-bottom: 25px;
+div#footerMap {
+   margin-bottom: 0px;
 }
 
-div.col-md-6 h5 {
-   margin-top: 25px;
-
+div#adress.col-md-4 {
+   margin-top: 30px;
+   font-weight: bold;
+   font-size: 16px;
+   margin-bottom: 30px;
+   margin-left: 30px;
 }
