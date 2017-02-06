@@ -56,10 +56,24 @@ div.col-xs-6.col-md-6 {
 .container-fluid-3 {
    height: 350px;
    margin-top: 50px;
+   margin-left: 10px;
 }
 
 .col-xs-4.col-md-4 {
    text-align: center;
+}
+
+.newsFeed {
+   align-self: center;
+   height: 220px;
+   width: 450px;
+   padding: 2px;
+   border: solid;
+}
+
+.content {
+   height: 215px;
+   overflow: auto;
 }
 
 //footer container
