@@ -1,7 +1,10 @@
+$primamry-color: #006600;
+$meny-color: #181818;
+
 body, html {
    margin: 0px;
    padding: 0px;
-   font-family: 'Libre Baskerville', serif !important;
+   font-family: 'Open Sans', sans-serif !important;
 }
 
 section.container#section {
@@ -9,37 +12,39 @@ section.container#section {
    margin-right: 0px !important;
    padding-right: 0px;
    padding-left: 0px;
-
 }
 
-div.col-xs-6.col-md-6 h1 {
-   color: green;
-   font-size: 400%;
-}
-
-
-.navbar.navbar-default {
-   margin-bottom: 0px;
-}
-
+//navbar
 .container-fluid {
    margin-top: 10px;
    margin-bottom: 10px;
-   color: black;
    letter-spacing: 2px;
-   font-size: 12px;
-
+   font-size: 14px;
+   .navbar {
+      margin-bottom: 0px;
+   }
+   a.navbar-brand {
+      font-size: 20px;
+   }
 }
 
-a.navbar-brand {
-   font-size: 20px;
-}
-
+//first container
 div.col-xs-6.col-md-6 {
    text-align: center;
    margin-top: 160px;
+   h1 {
+      color: $primamry-color;
+      text-align: left;
+      font-size: 400%;
+      margin-left: 30px;
+   }
+   h3 {
+      color: $primamry-color;
+      text-align: left;
+      margin-left: 30px;
+   }
 }
-
+//second container
 .container-fluid-2 {
    background-image: url('bakgrundbild.png');
    background-size: 100% 100%;
@@ -47,51 +52,51 @@ div.col-xs-6.col-md-6 {
    overflow: hidden;
    height: 600px;
    min-height: 100%;
+   margin-right: 0px;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
 }
 
+//third container
 .container-fluid-3 {
    height: 350px;
    margin-top: 50px;
    margin-left: 10px;
+   .col-xs-4.col-md-4 {
+      text-align: center;
+      .newsFeed {
+         align-self: center;
+         height: 220px;
+         width: 450px;
+         padding: 2px;
+         border: solid;
+      }
+      .content {
+         height: 215px;
+         overflow: auto;
+      }
+   }
 }
 
-.col-xs-4.col-md-4 {
-   text-align: center;
-}
 
-.newsFeed {
-   align-self: center;
-   height: 220px;
-   width: 450px;
-   padding: 2px;
-   border: solid;
-}
-
-.content {
-   height: 215px;
-   overflow: auto;
-}
-
-//footer container
+//footer
 
 footer.container-fluid.bg-4 {
-   background-color: lightgrey;
+   background-color: $meny-color;
+   color: lightgrey;
    height: 100%;
    margin-bottom: 0px;
-}
-
-div#footerMap {
-   margin-bottom: 0px;
-}
-
-div#adress.col-md-4 {
-   margin-top: 30px;
-   font-weight: bold;
-   font-size: 16px;
-   margin-bottom: 30px;
-   margin-left: 30px;
+   div#adress.col-md-12 {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 30px;
+      text-align: right;
+      margin-right: 0px;
+      p {
+         margin-right: 30px;
+      }
+   }
 }
