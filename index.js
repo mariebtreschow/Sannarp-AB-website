@@ -34,7 +34,11 @@ app.post('/login', (req, res) => {
             req.session.user = UserInDB;
             res.render('/admin');
          } else {
-            res.render('admin/login', { error: { message: 'Lösenordet är ej korrekt' }});
+            res.render('admin/login', {
+               error: {
+                  message: 'Lösenordet är ej korrekt'
+                  }
+               });
             }
          })
       )
