@@ -19,6 +19,21 @@ section.container#section {
   .container-fluid a.navbar-brand {
     font-size: 20px; }
 
+footer.container-fluid.bg-4 {
+  background-color: #181818;
+  color: lightgrey;
+  height: 100%;
+  margin-bottom: 0px; }
+  footer.container-fluid.bg-4 div#adress.col-md-12 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right; }
+    footer.container-fluid.bg-4 div#adress.col-md-12 p {
+      margin-right: 30px; }
+
 div.col-xs-6.col-md-6 {
   text-align: center;
   margin-top: 160px; }
@@ -60,20 +75,5 @@ div.col-xs-6.col-md-6 {
     .container-fluid-3 .col-xs-4.col-md-4 .content {
       height: 215px;
       overflow: auto; }
-
-footer.container-fluid.bg-4 {
-  background-color: #181818;
-  color: lightgrey;
-  height: 100%;
-  margin-bottom: 0px; }
-  footer.container-fluid.bg-4 div#adress.col-md-12 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: right; }
-    footer.container-fluid.bg-4 div#adress.col-md-12 p {
-      margin-right: 30px; }
 
 /*# sourceMappingURL=stylesheet.css.map */
