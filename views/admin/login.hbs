@@ -4,7 +4,12 @@
        <h1>Logga in Användare:</h1>
 
        <hr />
-
+          {{#if error}}
+            <div class="alert alert-danger" role="alert">
+               <strong>{{error.message}}</strong>
+            </div>
+         {{/if}}
+         
        <form action="/login" method="POST">
           <h4>Email adress:</h4>
             <div class="form-group">

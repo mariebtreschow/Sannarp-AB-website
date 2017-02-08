@@ -2,6 +2,7 @@
 const express = require('express'),
       hbs = require('hbs'),
       bodyParser = require('body-parser'),
+      bcrypt = require('bcrypt'),
       displayRoutes = require('express-routemap')
       morgan = require('morgan');
 
@@ -23,7 +24,25 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
+   db.User.findOne({
+      where: {
+         email: req.body.email,
+      }
+   }).then((UserInDB) => {
+      bcrypt.compare((req.body.password, UserInDB.passwordDigest, (error, result) => {
+         if (result) {
+            req.session.user = UserInDB;
+            res.render('/admin');
+         } else {
+            res.render('admin/login', { error: { message: 'Lösenordet är ej korrekt' }});
+            }
+         })
+      )
+   });
+});
 
+app.get('/admin', (req, res) => {
+   res.render('admin/show');
 });
 
 app.get('/register', (req, res) => {
