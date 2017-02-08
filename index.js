@@ -18,6 +18,27 @@ app.get('/', (req, res) => {
    res.render('index');
 });
 
+app.get('/login', (req, res) => {
+   res.render('admin/login');
+});
+
+app.post('/login', (req, res) => {
+
+});
+
+app.get('/register', (req, res) => {
+   res.render('admin/new-user');
+});
+
+app.post('/register', (req, res) => {
+   db.User.create(req.body).then((user) => {
+      res.redirect('/login');
+   }).catch((error) => {
+      console.log(error);
+      res.render('/register', { errors: error.errors });
+   });
+});
+
 
 db.sequelize.sync().then(() => {
    app.listen(3000, (req, res) => {

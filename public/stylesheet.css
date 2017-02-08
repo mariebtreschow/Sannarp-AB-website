@@ -1,5 +1,6 @@
 body, html {
   margin: 0px;
+  height: 100%;
   padding: 0px;
   font-family: 'Lato', sans-serif !important; }
 
@@ -18,22 +19,6 @@ section.container#section {
     margin-bottom: 0px; }
   .container-fluid a.navbar-brand {
     font-size: 20px; }
-
-footer.container-fluid.bg-4 {
-  background-color: #181818;
-  color: lightgrey;
-  height: 100%;
-  margin-bottom: 0px;
-  overflow: hidden; }
-  footer.container-fluid.bg-4 div#adress.col-md-12 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: right; }
-    footer.container-fluid.bg-4 div#adress.col-md-12 p {
-      margin-right: 30px; }
 
 div.col-xs-6.col-md-6.offset-md-3 {
   text-align: center;
@@ -80,5 +65,10 @@ div.col-xs-6.col-md-6.offset-md-3 {
   .container-fluid-3 .newsFeed li {
     font-size: 16px;
     margin: 0 0 8px 0; }
+
+.container-fluid-admin {
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 100px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

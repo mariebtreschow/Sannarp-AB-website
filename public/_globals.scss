@@ -1,5 +1,6 @@
 body, html {
    margin: 0px;
+   height: 100%;
    padding: 0px;
    font-family: 'Lato', sans-serif !important;
 }
@@ -25,22 +26,24 @@ section.container#section {
    }
 }
 
-footer.container-fluid.bg-4 {
-   background-color: $meny-color;
-   color: lightgrey;
-   height: 100%;
-   margin-bottom: 0px;
-   overflow: hidden;
-   div#adress.col-md-12 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 0px;
-      font-weight: bold;
-      font-size: 16px;
-      text-align: right;
-
-      p {
-         margin-right: 30px;
-      }
-   }
-}
+//footer.container-fluid.bg-4 {
+//   background-color: $meny-color;
+//   color: lightgrey;
+//   height: 110px;
+//   width: 100%;
+//   overflow: hidden;
+//   position: absolute;
+//   bottom: 0;
+//   div#adress.col-md-12 {
+//      margin-top: 20px;
+//      margin-bottom: 20px;
+//      margin-right: 0px;
+//      font-weight: bold;
+//      font-size: 16px;
+//      text-align: right;
+//
+//      p {
+//         margin-right: 30px;
+//      }
+//   }
+//}

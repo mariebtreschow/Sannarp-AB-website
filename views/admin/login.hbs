@@ -1,0 +1,25 @@
+<div class="container-fluid-admin">
+   <div class="row">
+     <div class="col-xs-4 offset-xs-3">
+       <h1>Logga in Användare:</h1>
+
+       <hr />
+
+       <form action="/login" method="POST">
+          <h4>Email adress:</h4>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" required />
+            </div>
+         <h4>Lösenord:</h4>
+            <div class="form-group">
+              <input type="password" name="password" class="form-control" required />
+            </div>
+
+         <a href="/register"><h5>Inte registrerad?</h5></a>
+         <div class="form-group text-xs-right">
+           <button type="submit" class="btn btn-success btn-lg">Logga in användare</button>
+         </div>
+       </form>
+     </div>
+   </div>
+</div>
