@@ -20,5 +20,22 @@
     "gulp-concat": "^2.6.1",
     "gulp-customize-bootstrap": "0.0.6",
     "gulp-util": "^3.0.8"
-  }
+  },
+  "name": "sannarp-business-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariebtreschow/sannarp-business-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariebtreschow/sannarp-business-website/issues"
+  },
+  "homepage": "https://github.com/mariebtreschow/sannarp-business-website#readme",
+  "description": ""
 }
