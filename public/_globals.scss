@@ -1,7 +1,7 @@
 body, html {
    margin: 0px;
    padding: 0px;
-   font-family: 'Open Sans', sans-serif !important;
+   font-family: 'Lato', sans-serif !important;
 }
 
 section.container#section {
@@ -30,6 +30,7 @@ footer.container-fluid.bg-4 {
    color: lightgrey;
    height: 100%;
    margin-bottom: 0px;
+   overflow: hidden;
    div#adress.col-md-12 {
       margin-top: 20px;
       margin-bottom: 20px;
